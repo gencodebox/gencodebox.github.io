@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>FAQs | Adminto - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap-dark.min.css" id="bootstrap-stylesheet" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app-dark.min.css" id="app-stylesheet" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body data-layout="horizontal" data-topbar="dark">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Navigation Bar-->
+            <header id="topnav">
+
+                <!-- Topbar Start -->
+                <div class="navbar-custom">
+                    <div class="container-fluid">
+
+                        <ul class="list-unstyled topnav-menu float-right mb-0">
+
+                            <li class="dropdown notification-list">
+                                <!-- Mobile menu toggle-->
+                                <a class="navbar-toggle nav-link">
+                                    <div class="lines">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <!-- End mobile menu toggle-->
+                            </li>
+
+                            <li class="d-none d-sm-block">
+                                <form class="app-search">
+                                    <div class="app-search-box">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="찾기...">
+                                            <div class="input-group-append">
+                                                <button class="btn" type="submit">
+                                                    <i class="fe-search"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+    
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <i class="fe-bell noti-icon"></i>
+                                    <span class="badge badge-danger rounded-circle noti-icon-badge">1</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+
+                                    <!-- item-->
+                                    <div class="dropdown-item noti-title">
+                                        <h5 class="m-0">
+                                            <span class="float-right">
+                                                <a href="" class="text-dark">
+                                                    <small>지우기</small>
+                                                </a>
+                                            </span>알림
+                                        </h5>
+                                    </div>
+
+                                    <div class="slimscroll noti-scroll">
+
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                            <div class="notify-icon">
+                                                <img src="assets/images/users/user-1.jpg" class="img-fluid rounded-circle" alt="" /> </div>
+                                            <p class="notify-details">운영자1</p>
+                                            <p class="text-muted mb-0 user-msg">
+                                                <small>점검결과 드립니다.</small>
+                                            </p>
+                                        </a>
+
+                                    </div>
+
+                                    <!-- All-->
+                                    <a href="javascript:void(0);" class="dropdown-item text-center text-primary notify-item notify-all">
+                                        전체 보기
+                                        <i class="fi-arrow-right"></i>
+                                    </a>
+
+                                </div>
+                            </li>
+
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <img src="assets/images/users/user-1.jpg" alt="user-image" class="rounded-circle">
+                                    <span class="pro-user-name ml-1">
+                                        관리자 <i class="mdi mdi-chevron-down"></i> 
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fe-user"></i>
+                                        <span>비밀번호변경</span>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fe-settings"></i>
+                                        <span>개인정보변경</span>
+                                    </a>
+
+                                    <div class="dropdown-divider"></div>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fe-log-out"></i>
+                                        <span>Logout</span>
+                                    </a>
+
+                                </div>
+                            </li>
+
+                            <!-- <li class="dropdown notification-list">
+                                <a href="javascript:void(0);" class="nav-link right-bar-toggle waves-effect">
+                                    <i class="fe-settings noti-icon"></i>
+                                </a>
+                            </li> -->
+
+                        </ul>
+
+                        <!-- LOGO -->
+                        <div class="logo-box">
+                            <a href="index.html" class="logo logo-light">
+                                <span class="logo-lg">
+                                    <!-- <img src="assets/images/logo-light.png" alt="" height="16"> -->
+                                    <img src="assets/images/logo-light.png" alt="" height="50">
+                                </span>
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-sm.png" alt="" height="24">
+                                </span>
+                            </a>
+                            <a href="index.html" class="logo logo-dark">
+                                <span class="logo-lg">
+                                    <img src="assets/images/kwp.png" alt="" height="16">
+                                </span>
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-sm.png" alt="" height="24">
+                                </span>
+                            </a>
+                        </div>
+                        <div id="navigation">
+                            <!-- Navigation Menu-->
+                            <ul class="navigation-menu">
+
+                                <li class="has-submenu">
+                                    <a href="#"><i class="mdi mdi-view-dashboard"></i>종합지표현황<div class="arrow-down"></div></a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a href="dashboard1.html">종합지표현황1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="dashboard2.html">종합지표현황2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="#"> <i class="mdi mdi-invert-colors"></i>화재지수현황<div class="arrow-down"></div></a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a href="ui-buttons.html">화재발생 위치현황</a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui-buttons.html">구역별 화재지수현황</a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui-cards.html">설비별 화재지수현황</a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui-draggable-cards.html">연료별 화재지수현황</a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui-checkbox-radio.html">시나리오별 화재지수현황</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#">
+                                        <i class="mdi mdi-lifebuoy"></i>화재위험도관리<div class="arrow-down"></div></a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="form-elements.html">위험요소 item 관리</a>
+                                        </li>
+                                        <li>
+                                            <a href="form-advanced.html">위험평가기준관리</a>
+                                        </li>
+                                        <li>
+                                            <a href="form-validation.html">위험평가RiskMap관리</a>
+                                        </li>
+                                        <li>
+                                            <a href="form-wizard.html">위험평가결과추출</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#"> <i class="mdi mdi-chart-donut-variant"></i>기기 이벤트현황<div class="arrow-down"></div></a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="charts-flot.html">센서별 이벤트현황</a>
+                                        </li>
+                                        <li>
+                                            <a href="charts-morris.html">구역별 이벤트현황</a>
+                                        </li>
+                                        <li>
+                                            <a href="charts-chartist.html">설비별 이벤트현황</a>
+                                        </li>
+                                        <li>
+                                            <a href="charts-chartjs.html">알고리즘별 이벤트현황</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="#"> <i class="mdi mdi-cards-outline"></i>기기별 데이터관리<div class="arrow-down"></div></a>
+                                    <ul class="submenu megamenu">
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a href="pages-starter.html">센서별 디스크립터관리</a>
+                                                </li>
+                                                <li>
+                                                    <a href="pages-login.html">분류체계관리</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#"> <i class="mdi mdi-card-bulleted-settings-outline"></i>분석/통계<div class="arrow-down"></div></a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="#"> <i class="mdi mdi-cards-outline"></i>FDS 시뮬레이션</a>
+                                        </li>
+                                        <li class="has-submenu">
+                                            <a href="#">부품별 이상감지<div class="arrow-down"></div></a>
+                                            <ul class="submenu">
+                                                <li><a href="layouts-vertical.html">구역별 통계</a></li>
+                                                <li>
+                                                    <a href="layouts-menubar-dark.html">연료별 통계</a>
+                                                </li>
+                                                <li>
+                                                    <a href="layouts-center-menu.html">설비별 통계</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                            <!-- End navigation menu -->
+
+                            <!-- <div class="clearfix"></div> -->
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div> <!-- end container-fluid-->
+                </div>
+                <!-- end Topbar -->
+            </header>
+            <!-- End Navigation Bar-->
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box d-flex align-items-center justify-content-between">
+                                    <h4 class="page-title">FAQs</h4>
+
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Pages</a></li>
+                                            <li class="breadcrumb-item active">FAQs</li>
+                                        </ol>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end page title -->
+                        
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="card-box">
+                                    <div class="row justify-content-center">
+                                        <div class="col-sm-6">
+                                            <div class="text-center">
+                                                <h3>Frequently Asked Questions</h3>
+                                                <p class="text-muted"> Nisi praesentium similique totam odio obcaecati, reprehenderit,
+                                                    dignissimos rem temporibus ea inventore alias! Beatae animi nemo ea
+                                                    tempora, temporibus laborum facilis ut!</p>
+
+                                                <button type="button" class="btn btn-success waves-effect waves-light mt-1">Email us your question</button>
+                                                <button type="button" class="btn btn-primary waves-effect waves-light mt-1">Send us a tweet</button>
+
+                                            </div>
+                                        </div><!-- end col -->
+                                    </div><!-- end row -->
+
+                                    <div class="row mt-4 justify-content-center">
+                                        <div class="col-xl-5">
+                                            <div class="p-2">
+                                                
+                                                <div class="accordion custom-accordion" id="accordionExample">
+                                                    <div class="card mb-2">
+                                                        <div class="card-header bg-light">
+                                                            <h5 class="card-title m-0">
+                                                                <a href="#" class="text-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                    What is Lorem Ipsum?
+                                                                </a>
+                                                            </h5>
+                                                        </div>
+
+                                                        <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+                                                            <div class="card-body">
+                                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                                                <p class="mb-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card mb-2">
+                                                        <div class="card-header bg-light">
+                                                            <h5 class="card-title m-0">
+                                                                <a href="#" class="text-dark" class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                                    Is safe use Lorem Ipsum?
+                                                                </a>
+                                                            </h5>
+                                                        </div>
+                                                        <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+                                                            <div class="card-body">
+                                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                                                <p class="mb-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card mb-2">
+                                                        <div class="card-header bg-light">
+                                                            <h5 class="card-title m-0">
+                                                                <a href="#" class="text-dark" class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                                    Why use Lorem Ipsum?
+                                                                </a>
+                                                            </h5>
+                                                        </div>
+                                                        <div id="collapseThree" class="collapse" data-parent="#accordionExample">
+                                                            <div class="card-body">
+                                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                                                <p class="mb-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- accordian end -->
+
+                                            </div>
+                                        </div>
+                                        <!-- end col -->
+
+                                        <div class="col-xl-5">
+                                            <div class="p-2">
+                                                <div class="accordion custom-accordion" id="accordionExample1">
+                                                    <div class="card mb-2">
+                                                        <div class="card-header bg-light">
+                                                            <h5 class="card-title m-0">
+                                                                <a href="#" class="text-dark" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                                                    License & Copyright
+                                                                </a>
+                                                            </h5>
+                                                        </div>
+
+                                                        <div id="collapseFour" class="collapse show" data-parent="#accordionExample1">
+                                                            <div class="card-body">
+                                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                                                <p class="mb-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card mb-2">
+                                                        <div class="card-header bg-light">
+                                                            <h5 class="card-title m-0">
+                                                                <a href="#" class="text-dark" class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                                    How many variations exist?
+                                                                </a>
+                                                            </h5>
+                                                        </div>
+                                                        <div id="collapseFive" class="collapse" data-parent="#accordionExample1">
+                                                            <div class="card-body">
+                                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                                                <p class="mb-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card mb-2">
+                                                        <div class="card-header bg-light">
+                                                            <h5 class="card-title m-0">
+                                                                <a href="#" class="text-dark" class="collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                                    Why use Lorem Ipsum?
+                                                                </a>
+                                                            </h5>
+                                                        </div>
+                                                        <div id="collapseSix" class="collapse" data-parent="#accordionExample1">
+                                                            <div class="card-body">
+                                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                                                <p class="mb-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- accordian end -->
+                                            </div>
+                                        </div>
+                                        <!-- end col -->
+                                    </div>
+                                    <!-- end row -->
+
+
+                                </div>
+                            </div><!-- end col -->
+                        </div>
+                        <!-- end row -->        
+                        
+                    </div> <!-- container-fluid -->
+
+                </div> <!-- content -->
+
+                <!-- Footer Start -->
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                               2016 - 2020 &copy; Adminto theme by <a href="">Coderthemes</a> 
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-md-right footer-links d-none d-sm-block">
+                                    <a href="javascript:void(0);">About Us</a>
+                                    <a href="javascript:void(0);">Help</a>
+                                    <a href="javascript:void(0);">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- end Footer -->
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+
+        <!-- Right Sidebar -->
+        <div class="right-bar">
+            <div class="rightbar-title">
+                <a href="javascript:void(0);" class="right-bar-toggle float-right">
+                    <i class="mdi mdi-close"></i>
+                </a>
+                <h4 class="font-16 m-0 text-white">Theme Customizer</h4>
+            </div>
+            <div class="slimscroll-menu rightbar-content">
+
+                <div class="p-3">
+                    <div class="alert alert-warning" role="alert">
+                        <strong>Customize </strong> the overall color scheme, layout, etc.
+                    </div>
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/light.png" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="custom-control custom-switch mb-3">
+                        <input type="checkbox" class="custom-control-input theme-choice" id="light-mode-switch" checked />
+                        <label class="custom-control-label" for="light-mode-switch">Light Mode</label>
+                    </div>
+    
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/dark.png" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="custom-control custom-switch mb-3">
+                        <input type="checkbox" class="custom-control-input theme-choice" id="dark-mode-switch" data-bsStyle="assets/css/bootstrap-dark.min.css" 
+                            data-appStyle="assets/css/app-dark.min.css" />
+                        <label class="custom-control-label" for="dark-mode-switch">Dark Mode</label>
+                    </div>
+    
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/rtl.png" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="custom-control custom-switch mb-3">
+                        <input type="checkbox" class="custom-control-input theme-choice" id="rtl-mode-switch" data-appStyle="assets/css/app-rtl.min.css" />
+                        <label class="custom-control-label" for="rtl-mode-switch">RTL Mode</label>
+                    </div>
+
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/dark-rtl.png" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="custom-control custom-switch mb-5">
+                        <input type="checkbox" class="custom-control-input theme-choice" id="dark-rtl-mode-switch" data-bsStyle="assets/css/bootstrap-dark.min.css" 
+                            data-appStyle="assets/css/app-dark-rtl.min.css" />
+                        <label class="custom-control-label" for="dark-rtl-mode-switch">Dark RTL Mode</label>
+                    </div>
+
+                    <a href="https://1.envato.market/k0YEM" class="btn btn-danger btn-block mt-3" target="_blank"><i class="mdi mdi-download mr-1"></i> Download Now</a>
+                </div>
+            </div> <!-- end slimscroll-menu-->
+        </div>
+        <!-- /Right-bar -->
+
+        <!-- Right bar overlay-->
+        <!-- <div class="rightbar-overlay"></div> -->
+
+        <!-- <a href="javascript:void(0);" class="right-bar-toggle demos-show-btn">
+            <i class="mdi mdi-cog-outline mdi-spin"></i> &nbsp;Choose Demos
+        </a> -->
+
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.min.js"></script>
+        
+    </body>
+</html>

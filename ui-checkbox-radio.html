@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Checkbox & Radio | Adminto - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap-dark.min.css" id="bootstrap-stylesheet" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app-dark.min.css" id="app-stylesheet" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body data-layout="horizontal" data-topbar="dark">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Navigation Bar-->
+            <header id="topnav">
+
+                <!-- Topbar Start -->
+                <div class="navbar-custom">
+                    <div class="container-fluid">
+
+                        <ul class="list-unstyled topnav-menu float-right mb-0">
+
+                            <li class="dropdown notification-list">
+                                <!-- Mobile menu toggle-->
+                                <a class="navbar-toggle nav-link">
+                                    <div class="lines">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <!-- End mobile menu toggle-->
+                            </li>
+
+                            <li class="d-none d-sm-block">
+                                <form class="app-search">
+                                    <div class="app-search-box">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="찾기...">
+                                            <div class="input-group-append">
+                                                <button class="btn" type="submit">
+                                                    <i class="fe-search"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+    
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <i class="fe-bell noti-icon"></i>
+                                    <span class="badge badge-danger rounded-circle noti-icon-badge">1</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+
+                                    <!-- item-->
+                                    <div class="dropdown-item noti-title">
+                                        <h5 class="m-0">
+                                            <span class="float-right">
+                                                <a href="" class="text-dark">
+                                                    <small>지우기</small>
+                                                </a>
+                                            </span>알림
+                                        </h5>
+                                    </div>
+
+                                    <div class="slimscroll noti-scroll">
+
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                            <div class="notify-icon">
+                                                <img src="assets/images/users/user-1.jpg" class="img-fluid rounded-circle" alt="" /> </div>
+                                            <p class="notify-details">운영자1</p>
+                                            <p class="text-muted mb-0 user-msg">
+                                                <small>점검결과 드립니다.</small>
+                                            </p>
+                                        </a>
+
+                                    </div>
+
+                                    <!-- All-->
+                                    <a href="javascript:void(0);" class="dropdown-item text-center text-primary notify-item notify-all">
+                                        전체 보기
+                                        <i class="fi-arrow-right"></i>
+                                    </a>
+
+                                </div>
+                            </li>
+
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <img src="assets/images/users/user-1.jpg" alt="user-image" class="rounded-circle">
+                                    <span class="pro-user-name ml-1">
+                                        관리자 <i class="mdi mdi-chevron-down"></i> 
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fe-user"></i>
+                                        <span>비밀번호변경</span>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fe-settings"></i>
+                                        <span>개인정보변경</span>
+                                    </a>
+
+                                    <div class="dropdown-divider"></div>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fe-log-out"></i>
+                                        <span>Logout</span>
+                                    </a>
+
+                                </div>
+                            </li>
+
+                            <!-- <li class="dropdown notification-list">
+                                <a href="javascript:void(0);" class="nav-link right-bar-toggle waves-effect">
+                                    <i class="fe-settings noti-icon"></i>
+                                </a>
+                            </li> -->
+
+                        </ul>
+
+                        <!-- LOGO -->
+                        <div class="logo-box">
+                            <a href="index.html" class="logo logo-light">
+                                <span class="logo-lg">
+                                    <!-- <img src="assets/images/logo-light.png" alt="" height="16"> -->
+                                    <img src="assets/images/logo-light.png" alt="" height="50">
+                                </span>
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-sm.png" alt="" height="24">
+                                </span>
+                            </a>
+                            <a href="index.html" class="logo logo-dark">
+                                <span class="logo-lg">
+                                    <img src="assets/images/kwp.png" alt="" height="16">
+                                </span>
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-sm.png" alt="" height="24">
+                                </span>
+                            </a>
+                        </div>
+                        <div id="navigation">
+                            <!-- Navigation Menu-->
+                            <ul class="navigation-menu">
+
+                                <li class="has-submenu">
+                                    <a href="#"><i class="mdi mdi-view-dashboard"></i>종합지표현황<div class="arrow-down"></div></a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a href="dashboard1.html">종합지표현황1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="dashboard2.html">종합지표현황2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="#"> <i class="mdi mdi-invert-colors"></i>화재지수현황<div class="arrow-down"></div></a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a href="ui-buttons.html">화재발생 위치현황</a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui-buttons.html">구역별 화재지수현황</a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui-cards.html">설비별 화재지수현황</a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui-draggable-cards.html">연료별 화재지수현황</a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui-checkbox-radio.html">시나리오별 화재지수현황</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#">
+                                        <i class="mdi mdi-lifebuoy"></i>화재위험도관리<div class="arrow-down"></div></a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="form-elements.html">위험요소 item 관리</a>
+                                        </li>
+                                        <li>
+                                            <a href="form-advanced.html">위험평가기준관리</a>
+                                        </li>
+                                        <li>
+                                            <a href="form-validation.html">위험평가RiskMap관리</a>
+                                        </li>
+                                        <li>
+                                            <a href="form-wizard.html">위험평가결과추출</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#"> <i class="mdi mdi-chart-donut-variant"></i>기기 이벤트현황<div class="arrow-down"></div></a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="charts-flot.html">센서별 이벤트현황</a>
+                                        </li>
+                                        <li>
+                                            <a href="charts-morris.html">구역별 이벤트현황</a>
+                                        </li>
+                                        <li>
+                                            <a href="charts-chartist.html">설비별 이벤트현황</a>
+                                        </li>
+                                        <li>
+                                            <a href="charts-chartjs.html">알고리즘별 이벤트현황</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="#"> <i class="mdi mdi-cards-outline"></i>기기별 데이터관리<div class="arrow-down"></div></a>
+                                    <ul class="submenu megamenu">
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <a href="pages-starter.html">센서별 디스크립터관리</a>
+                                                </li>
+                                                <li>
+                                                    <a href="pages-login.html">분류체계관리</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="#"> <i class="mdi mdi-card-bulleted-settings-outline"></i>분석/통계<div class="arrow-down"></div></a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="#"> <i class="mdi mdi-cards-outline"></i>FDS 시뮬레이션</a>
+                                        </li>
+                                        <li class="has-submenu">
+                                            <a href="#">부품별 이상감지<div class="arrow-down"></div></a>
+                                            <ul class="submenu">
+                                                <li><a href="layouts-vertical.html">구역별 통계</a></li>
+                                                <li>
+                                                    <a href="layouts-menubar-dark.html">연료별 통계</a>
+                                                </li>
+                                                <li>
+                                                    <a href="layouts-center-menu.html">설비별 통계</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                            <!-- End navigation menu -->
+
+                            <!-- <div class="clearfix"></div> -->
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div> <!-- end container-fluid-->
+                </div>
+                <!-- end Topbar -->
+            </header>
+            <!-- End Navigation Bar-->
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box d-flex align-items-center justify-content-between">
+                                    <h4 class="page-title">Checkbox & Radio</h4>
+
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">User Interface</a></li>
+                                            <li class="breadcrumb-item active">Checkbox & Radio</li>
+                                        </ol>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end page title -->
+                        
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card-box">
+
+                                    <div class="dropdown float-right">
+                                        <a href="#" class="dropdown-toggle arrow-none card-drop" data-toggle="dropdown" aria-expanded="false">
+                                            <i class="mdi mdi-dots-vertical"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <!-- item-->
+                                            <a href="javascript:void(0);" class="dropdown-item">Action</a>
+                                            <!-- item-->
+                                            <a href="javascript:void(0);" class="dropdown-item">Another action</a>
+                                            <!-- item-->
+                                            <a href="javascript:void(0);" class="dropdown-item">Something else</a>
+                                            <!-- item-->
+                                            <a href="javascript:void(0);" class="dropdown-item">Separated link</a>
+                                        </div>
+                                    </div>
+
+                                    <h4 class="header-title mt-0">Basic</h4>
+
+                                    <p class="text-muted font-13">
+                                        Supports bootstrap brand colors: <code>.checkbox-primary</code>, <code>.checkbox-info</code> etc.
+                                    </p>
+
+                                    <div class="checkbox">
+                                        <input id="checkbox0" type="checkbox">
+                                        <label for="checkbox0">
+                                            Default
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-primary">
+                                        <input id="checkbox2" type="checkbox" checked>
+                                        <label for="checkbox2">
+                                            Primary
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-success">
+                                        <input id="checkbox3" type="checkbox">
+                                        <label for="checkbox3">
+                                            Success
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-info">
+                                        <input id="checkbox4" type="checkbox">
+                                        <label for="checkbox4">
+                                            Info
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-warning">
+                                        <input id="checkbox5" type="checkbox" checked>
+                                        <label for="checkbox5">
+                                            Warning
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-danger">
+                                        <input id="checkbox6" type="checkbox" checked>
+                                        <label for="checkbox6">
+                                            Danger
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-purple">
+                                        <input id="checkbox6a" type="checkbox">
+                                        <label for="checkbox6a">
+                                            Purple
+                                        </label>
+                                    </div>
+
+                                    <div class="checkbox checkbox-pink">
+                                        <input id="checkbox6b" type="checkbox" checked>
+                                        <label for="checkbox6b">
+                                            Pink
+                                        </label>
+                                    </div>
+
+                                    <div class="checkbox checkbox-dark">
+                                        <input id="checkbox6c" type="checkbox">
+                                        <label for="checkbox6c">
+                                            Dark
+                                        </label>
+                                    </div>
+
+
+                                    <p class="text-muted font-13 mt-2">Checkboxes without label text <code>.checkbox-single</code></p>
+                                    <div class="checkbox checkbox-single">
+                                        <input type="checkbox" id="singleCheckbox1" value="option1" aria-label="Single checkbox One">
+                                        <label for="singleCheckbox1"></label>
+                                    </div>
+                                    <div class="checkbox checkbox-primary checkbox-single">
+                                        <input type="checkbox" id="singleCheckbox2" value="option2" checked aria-label="Single checkbox Two">
+                                        <label for="singleCheckbox2"></label>
+                                    </div>
+
+
+                                    <p class="text-muted font-13 mt-2">Inline checkboxes</p>
+                                    <div class="checkbox form-check-inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <label for="inlineCheckbox1"> Inline One </label>
+                                    </div>
+                                    <div class="checkbox checkbox-success form-check-inline">
+                                        <input type="checkbox" id="inlineCheckbox2" value="option1" checked>
+                                        <label for="inlineCheckbox2"> Inline Two </label>
+                                    </div>
+                                    <div class="checkbox checkbox-pink form-check-inline">
+                                        <input type="checkbox" id="inlineCheckbox3" value="option1">
+                                        <label for="inlineCheckbox3"> Inline Three </label>
+                                    </div>
+                                </div>
+                            </div><!-- end col -->
+
+                            <div class="col-lg-4">
+                                <div class="card-box">
+
+                                    <div class="dropdown float-right">
+                                        <a href="#" class="dropdown-toggle arrow-none card-drop" data-toggle="dropdown" aria-expanded="false">
+                                            <i class="mdi mdi-dots-vertical"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <!-- item-->
+                                            <a href="javascript:void(0);" class="dropdown-item">Action</a>
+                                            <!-- item-->
+                                            <a href="javascript:void(0);" class="dropdown-item">Another action</a>
+                                            <!-- item-->
+                                            <a href="javascript:void(0);" class="dropdown-item">Something else</a>
+                                            <!-- item-->
+                                            <a href="javascript:void(0);" class="dropdown-item">Separated link</a>
+                                        </div>
+                                    </div>
+
+                                    <h4 class="header-title mt-0">Circled</h4>
+
+                                    <p class="text-muted font-13">
+                                        <code>.checkbox-circle</code> for roundness.
+                                    </p>
+
+                                    <div class="checkbox checkbox-circle">
+                                        <input id="checkbox7" type="checkbox">
+                                        <label for="checkbox7">
+                                            Simply Rounded
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-info checkbox-circle">
+                                        <input id="checkbox8" type="checkbox" checked>
+                                        <label for="checkbox8">
+                                            Info
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-primary checkbox-circle">
+                                        <input id="checkbox-9" type="checkbox">
+                                        <label for="checkbox-9">
+                                            Primary
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-success checkbox-circle">
+                                        <input id="checkbox-10" type="checkbox" checked>
+                                        <label for="checkbox-10">
+                                            Success
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-warning checkbox-circle">
+                                        <input id="checkbox-11" type="checkbox">
+                                        <label for="checkbox-11">
+                                            Warning
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-danger checkbox-circle">
+                                        <input id="checkbox-12" type="checkbox" checked>
+                                        <label for="checkbox-12">
+                                            Danger
+                                        </label>
+                                    </div>
+
+                                    <div class="checkbox checkbox-purple checkbox-circle">
+                                        <input id="checkbox-13" type="checkbox" checked>
+                                        <label for="checkbox-13">
+                                            Purple
+                                        </label>
+                                    </div>
+
+                                    <div class="checkbox checkbox-pink checkbox-circle">
+                                        <input id="checkbox-14" type="checkbox">
+                                        <label for="checkbox-14">
+                                            Pink
+                                        </label>
+                                    </div>
+
+                                    <div class="checkbox checkbox-dark checkbox-circle">
+                                        <input id="checkbox-15" type="checkbox" checked>
+                                        <label for="checkbox-15">
+                                            Dark
+                                        </label>
+                                    </div>
+
+
+                                    <p class="text-muted font-13 mt-2">Checkboxes without label text <code>.checkbox-single</code></p>
+                                    <div class="checkbox checkbox-single checkbox-circle">
+                                        <input type="checkbox" id="singleCheckbox11" value="option1" aria-label="Single checkbox One">
+                                        <label></label>
+                                    </div>
+                                    <div class="checkbox checkbox-primary checkbox-single checkbox-circle">
+                                        <input type="checkbox" id="singleCheckbox21" value="option2" checked aria-label="Single checkbox Two">
+                                        <label></label>
+                                    </div>
+
+
+                                    <p class="text-muted font-13 mt-2">Inline checkboxes</p>
+                                    <div class="checkbox form-check-inline checkbox-circle">
+                                        <input type="checkbox" id="inlineCheckbox11" value="option1">
+                                        <label for="inlineCheckbox11"> Inline One </label>
+                                    </div>
+                                    <div class="checkbox checkbox-success form-check-inline checkbox-circle">
+                                        <input type="checkbox" id="inlineCheckbox21" value="option1" checked>
+                                        <label for="inlineCheckbox21"> Inline Two </label>
+                                    </div>
+                                    <div class="checkbox checkbox-pink form-check-inline checkbox-circle">
+                                        <input type="checkbox" id="inlineCheckbox31" value="option1">
+                                        <label for="inlineCheckbox31"> Inline Three </label>
+                                    </div>
+
+                                </div>
+                            </div><!-- end col -->
+
+                            <div class="col-lg-4">
+                                <div class="card-box">
+
+                                    <div class="dropdown float-right">
+                                        <a href="#" class="dropdown-toggle arrow-none card-drop" data-toggle="dropdown" aria-expanded="false">
+                                            <i class="mdi mdi-dots-vertical"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <!-- item-->
+                                            <a href="javascript:void(0);" class="dropdown-item">Action</a>
+                                            <!-- item-->
+                                            <a href="javascript:void(0);" class="dropdown-item">Another action</a>
+                                            <!-- item-->
+                                            <a href="javascript:void(0);" class="dropdown-item">Something else</a>
+                                            <!-- item-->
+                                            <a href="javascript:void(0);" class="dropdown-item">Separated link</a>
+                                        </div>
+                                    </div>
+
+                                    <h4 class="header-title mt-0">Disabled</h4>
+
+                                    <p class="text-muted font-13">
+                                        Disabled state also supported.
+                                    </p>
+
+                                    <div class="checkbox">
+                                        <input id="checkbox9" type="checkbox" disabled>
+                                        <label for="checkbox9">
+                                            Can't check this
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-custom">
+                                        <input id="checkbox10" type="checkbox" disabled checked>
+                                        <label for="checkbox10">
+                                            This too
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-warning checkbox-circle">
+                                        <input id="checkbox110" type="checkbox" disabled checked>
+                                        <label for="checkbox110">
+                                            And this
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-info">
+                                        <input id="checkbox12" type="checkbox" disabled checked>
+                                        <label for="checkbox12">
+                                            Can't check this
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-pink">
+                                        <input id="checkbox13" type="checkbox" disabled checked>
+                                        <label for="checkbox13">
+                                            This too
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-purple checkbox-circle">
+                                        <input id="checkbox14" type="checkbox" disabled checked>
+                                        <label for="checkbox14">
+                                            And this
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div><!-- end col -->
+
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card-box">
+
+                                    <div class="dropdown float-right">
+                                        <a href="#" class="dropdown-toggle arrow-none card-drop" data-toggle="dropdown" aria-expanded="false">
+                                            <i class="mdi mdi-dots-vertical"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <!-- item-->
+                                            <a href="javascript:void(0);" class="dropdown-item">Action</a>
+                                            <!-- item-->
+                                            <a href="javascript:void(0);" class="dropdown-item">Another action</a>
+                                            <!-- item-->
+                                            <a href="javascript:void(0);" class="dropdown-item">Something else</a>
+                                            <!-- item-->
+                                            <a href="javascript:void(0);" class="dropdown-item">Separated link</a>
+                                        </div>
+                                    </div>
+
+                                    <h4 class="header-title mt-0">Basic</h4>
+
+                                    <p class="text-muted font-13">
+                                        Supports bootstrap brand colors: <code>.radio-primary</code>, <code>.radio-danger</code> etc.
+                                    </p>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="radio">
+                                                <input type="radio" name="radio" id="radio1" value="option1" checked>
+                                                <label for="radio1">
+                                                    Default
+                                                </label>
+                                            </div>
+                                            <div class="radio radio-primary">
+                                                <input type="radio" name="radio" id="radio3" value="option3">
+                                                <label for="radio3">
+                                                    Primary
+                                                </label>
+                                            </div>
+                                            <div class="radio radio-success">
+                                                <input type="radio" name="radio" id="radio4" value="option4">
+                                                <label for="radio4">
+                                                    Success
+                                                </label>
+                                            </div>
+                                            <div class="radio radio-info">
+                                                <input type="radio" name="radio" id="radio5" value="option5">
+                                                <label for="radio5">
+                                                    Info
+                                                </label>
+                                            </div>
+                                            <div class="radio radio-danger">
+                                                <input type="radio" name="radio" id="radio6" value="option6">
+                                                <label for="radio6">
+                                                    Danger
+                                                </label>
+                                            </div>
+                                            <div class="radio radio-warning">
+                                                <input type="radio" name="radio" id="radio7" value="option7">
+                                                <label for="radio7">
+                                                    Warning
+                                                </label>
+                                            </div>
+                                            <div class="radio radio-purple">
+                                                <input type="radio" name="radio" id="radio8" value="option8">
+                                                <label for="radio8">
+                                                    Purple
+                                                </label>
+                                            </div>
+                                            <div class="radio radio-pink">
+                                                <input type="radio" name="radio" id="radio9" value="option9">
+                                                <label for="radio9">
+                                                    Pink
+                                                </label>
+                                            </div>
+
+                                        </div><!-- end col -->
+
+                                        <div class="col-sm-6">
+                                            <div class="radio">
+                                                <input type="radio" name="radio1" id="radio11" value="option1" checked>
+                                                <label for="radio11">
+                                                    Default
+                                                </label>
+                                            </div>
+                                            <div class="radio radio-primary">
+                                                <input type="radio" name="radio3" id="radio13" value="option3">
+                                                <label for="radio13">
+                                                    Primary
+                                                </label>
+                                            </div>
+                                            <div class="radio radio-success">
+                                                <input type="radio" name="radio4" id="radio14" value="option4" checked>
+                                                <label for="radio14">
+                                                    Success
+                                                </label>
+                                            </div>
+                                            <div class="radio radio-info">
+                                                <input type="radio" name="radio5" id="radio15" value="option5" checked>
+                                                <label for="radio15">
+                                                    Info
+                                                </label>
+                                            </div>
+                                            <div class="radio radio-danger">
+                                                <input type="radio" name="radio6" id="radio16" value="option6">
+                                                <label for="radio16">
+                                                    Danger
+                                                </label>
+                                            </div>
+                                            <div class="radio radio-warning">
+                                                <input type="radio" name="radio7" id="radio17" value="option7" checked>
+                                                <label for="radio17">
+                                                    Warning
+                                                </label>
+                                            </div>
+                                            <div class="radio radio-purple">
+                                                <input type="radio" name="radio8" id="radio18" value="option8">
+                                                <label for="radio18">
+                                                    Purple
+                                                </label>
+                                            </div>
+                                            <div class="radio radio-pink">
+                                                <input type="radio" name="radio9" id="radio19" value="option9" checked>
+                                                <label for="radio19">
+                                                    Pink
+                                                </label>
+                                            </div>
+
+                                        </div><!-- end col -->
+
+                                    </div>
+                                    <!-- end row -->
+
+
+                                    <p class="text-muted font-13 mt-2">Radios without label text <code>.radio-single</code></p>
+                                    <div class="radio radio-single">
+                                        <input type="radio" id="singleRadio1" value="option1.1" name="radioSingle1" aria-label="Single radio One">
+                                        <label for="singleRadio1"></label>
+                                    </div>
+                                    <div class="radio radio-success radio-single">
+                                        <input type="radio" id="singleRadio2" value="option2.1" name="radioSingle1" checked aria-label="Single radio Two">
+                                        <label for="singleRadio2"></label>
+                                    </div>
+
+
+                                    <p class="text-muted font-13 mt-2">Inline radios</p>
+                                    <div class="radio radio-info form-check-inline">
+                                        <input type="radio" id="inlineRadio1" value="option1" name="radioInline" checked>
+                                        <label for="inlineRadio1"> Inline One </label>
+                                    </div>
+                                    <div class="radio form-check-inline">
+                                        <input type="radio" id="inlineRadio2" value="option2" name="radioInline" checked>
+                                        <label for="inlineRadio2"> Inline Two </label>
+                                    </div>
+                                </div>
+                            </div><!-- end col -->
+
+                            <div class="col-lg-4">
+                                <div class="card-box">
+
+                                    <div class="dropdown float-right">
+                                        <a href="#" class="dropdown-toggle arrow-none card-drop" data-toggle="dropdown" aria-expanded="false">
+                                            <i class="mdi mdi-dots-vertical"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <!-- item-->
+                                            <a href="javascript:void(0);" class="dropdown-item">Action</a>
+                                            <!-- item-->
+                                            <a href="javascript:void(0);" class="dropdown-item">Another action</a>
+                                            <!-- item-->
+                                            <a href="javascript:void(0);" class="dropdown-item">Something else</a>
+                                            <!-- item-->
+                                            <a href="javascript:void(0);" class="dropdown-item">Separated link</a>
+                                        </div>
+                                    </div>
+
+                                    <h4 class="header-title m-t-0 m-b-30">Disabled</h4>
+
+                                    <p class="text-muted font-13 m-b-15">
+                                        Disabled state also supported.
+                                    </p>
+
+                                    <div class="radio radio-danger">
+                                        <input type="radio" name="radio31" id="radio51" value="option1" checked disabled>
+                                        <label for="radio51">
+                                            Next
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <input type="radio" name="radio41" id="radio61" value="option2" checked disabled>
+                                        <label for="radio61">
+                                            One
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-pink">
+                                        <input type="radio" name="radio61" id="radio81" value="option4" checked disabled>
+                                        <label for="radio81">
+                                            One
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div><!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        
+                    </div> <!-- container-fluid -->
+
+                </div> <!-- content -->
+
+                <!-- Footer Start -->
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                               2016 - 2020 &copy; Adminto theme by <a href="">Coderthemes</a> 
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-md-right footer-links d-none d-sm-block">
+                                    <a href="javascript:void(0);">About Us</a>
+                                    <a href="javascript:void(0);">Help</a>
+                                    <a href="javascript:void(0);">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- end Footer -->
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+        </div>
+        <!-- END wrapper -->
+
+        <!-- Right Sidebar -->
+        <div class="right-bar">
+            <div class="rightbar-title">
+                <a href="javascript:void(0);" class="right-bar-toggle float-right">
+                    <i class="mdi mdi-close"></i>
+                </a>
+                <h4 class="font-16 m-0 text-white">Theme Customizer</h4>
+            </div>
+            <div class="slimscroll-menu rightbar-content">
+
+                <div class="p-3">
+                    <div class="alert alert-warning" role="alert">
+                        <strong>Customize </strong> the overall color scheme, layout, etc.
+                    </div>
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/light.png" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="custom-control custom-switch mb-3">
+                        <input type="checkbox" class="custom-control-input theme-choice" id="light-mode-switch" checked />
+                        <label class="custom-control-label" for="light-mode-switch">Light Mode</label>
+                    </div>
+    
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/dark.png" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="custom-control custom-switch mb-3">
+                        <input type="checkbox" class="custom-control-input theme-choice" id="dark-mode-switch" data-bsStyle="assets/css/bootstrap-dark.min.css" 
+                            data-appStyle="assets/css/app-dark.min.css" />
+                        <label class="custom-control-label" for="dark-mode-switch">Dark Mode</label>
+                    </div>
+    
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/rtl.png" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="custom-control custom-switch mb-3">
+                        <input type="checkbox" class="custom-control-input theme-choice" id="rtl-mode-switch" data-appStyle="assets/css/app-rtl.min.css" />
+                        <label class="custom-control-label" for="rtl-mode-switch">RTL Mode</label>
+                    </div>
+
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/dark-rtl.png" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="custom-control custom-switch mb-5">
+                        <input type="checkbox" class="custom-control-input theme-choice" id="dark-rtl-mode-switch" data-bsStyle="assets/css/bootstrap-dark.min.css" 
+                            data-appStyle="assets/css/app-dark-rtl.min.css" />
+                        <label class="custom-control-label" for="dark-rtl-mode-switch">Dark RTL Mode</label>
+                    </div>
+
+                    <a href="https://1.envato.market/k0YEM" class="btn btn-danger btn-block mt-3" target="_blank"><i class="mdi mdi-download mr-1"></i> Download Now</a>
+                </div>
+            </div> <!-- end slimscroll-menu-->
+        </div>
+        <!-- /Right-bar -->
+
+        <!-- Right bar overlay-->
+        <!-- <div class="rightbar-overlay"></div> -->
+
+        <!-- <a href="javascript:void(0);" class="right-bar-toggle demos-show-btn">
+            <i class="mdi mdi-cog-outline mdi-spin"></i> &nbsp;Choose Demos
+        </a> -->
+
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.min.js"></script>
+        
+    </body>
+</html>
