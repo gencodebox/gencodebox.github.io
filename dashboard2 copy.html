@@ -173,10 +173,10 @@
                                     <li>
                                         <ul>
                                             <li>
-                                                <a href="dashboard2.html">주요설비현황</a>
+                                                <a href="dashboard1.html">종합지표현황1</a>
                                             </li>
                                             <li>
-                                                <a href="dashboard-iot.html">IoT감지기현황</a>
+                                                <a href="dashboard2.html">종합지표현황2</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -324,13 +324,13 @@
                     <div class="row">
                         <div class="col-xl-12 ">
                             <ul class="nav nav-tabs nav-justified ">
-                                <li class="nav-item">
+                                <li class="nav-item border-sensor-main border-secondary">
                                     <a href="#home2" data-toggle="tab" aria-expanded="false" class="nav-link active">
                                         <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
                                         <span class="d-none d-sm-block">9호기</span>
                                     </a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item border-sensor-main border-secondary">
                                     <a href="#profile2" data-toggle="tab" aria-expanded="true" class="nav-link">
                                         <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
                                         <span class="d-none d-sm-block">10호기</span>
@@ -342,30 +342,31 @@
                                 <div role="tabpanel" class="tab-pane fade show active" id="home2">
                                     <div class="row">
                                         <div class="col-xl-4">
-                                            <div class="card-box border border-secondary">
-                                                <h4 class="header-title mb-3">터빈</h4>
+                                            <div class="card-box border border-secondary card-sensor">
+                                                <h4 class="header-title mb-2">터빈</h4>
                                                 <div class="separator"></div>
                                                 <div class="sensor-widget">
                                                     <div class="sensor-item">
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">터빈 유압유탱크</label>
-                                                                <div class="col-md-8">
-                                                                    
+                                                                <label class="col-md-3">터빈 유압유탱크</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip" title="임계점 온도 270 ℃">
+                                                                            <div class="sensor-item-unit-top">오일 온도(℃)</div>
                                                                             <div class="font-weight-bold text-primary" data-plugin="counterup">55.5</div>
-                                                                            <div class="sensor-item-unit">오일 온도(℃)</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip"
                                                                             title="안전율 : 1.1배, 1.5배(Safety detector)">
+                                                                            <div class="sensor-item-unit-top">오일 압력</div>
                                                                             <div class="font-weight-bold text-primary">1.2배 / 정상</div>
-                                                                            <div class="sensor-item-unit">오일 압력</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -376,12 +377,12 @@
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">터빈 윤활유탱크</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">터빈 윤활유탱크</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text">
+                                                                            <div class="sensor-item-unit-top">오일 온도(℃)</div>
                                                                             <div class="font-weight-bold text-warning" data-plugin="counterup">190.5</div>
-                                                                            <div class="sensor-item-unit">오일 온도(℃)</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -392,27 +393,31 @@
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">터빈 베어링</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">터빈 베어링</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip" title="임계점 온도 270 ℃">
+                                                                            <div class="sensor-item-unit-top">오일 온도(℃)</div>
                                                                             <div class="font-weight-bold text-primary" data-plugin="counterup">55.5</div>
-                                                                            <div class="sensor-item-unit">오일 온도(℃)</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip"
                                                                             title="안전율 : 1.1배, 1.5배(Safety detector)">
+                                                                            <div class="sensor-item-unit-top">오일 압력</div>
                                                                             <div class="font-weight-bold text-primary">1.2배 / 정상</div>
-                                                                            <div class="sensor-item-unit">오일 압력</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text">
+                                                                            <div class="sensor-item-unit-top">불꽃 감지</div>
                                                                             <div class="font-weight-bold text-primary">정상</div>
-                                                                            <div class="sensor-item-unit">불꽃 감지</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -423,18 +428,20 @@
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">발전기 본체</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">발전기 본체</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text">
+                                                                            <div class="sensor-item-unit-top">H2 누설감지</div>
                                                                             <div class="font-weight-bold text-primary">정상</div>
-                                                                            <div class="sensor-item-unit">H2 누설감지</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text">
+                                                                            <div class="sensor-item-unit-top">불꽃 감지</div>
                                                                             <div class="font-weight-bold text-primary">정상</div>
-                                                                            <div class="sensor-item-unit">불꽃 감지</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -445,18 +452,20 @@
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">수소 공급 설비</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">수소 공급 설비</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text">
+                                                                            <div class="sensor-item-unit-top">H2 누설감지</div>
                                                                             <div class="font-weight-bold text-primary">정상</div>
-                                                                            <div class="sensor-item-unit">H2 누설감지</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text">
+                                                                            <div class="sensor-item-unit-top">수소 이상 압력</div>
                                                                             <div class="font-weight-bold text-primary">1.2배 / 정상</div>
-                                                                            <div class="sensor-item-unit">수소 이상 압력</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -468,18 +477,20 @@
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">윤활유, 유압유 공급 배관</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">윤활유, 유압유 공급 배관</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text">
+                                                                            <div class="sensor-item-unit-top">불꽃 감지</div>
                                                                             <div class="font-weight-bold text-primary">정상</div>
-                                                                            <div class="sensor-item-unit">불꽃 감지</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text">
+                                                                            <div class="sensor-item-unit-top">오일 이상 압력</div>
                                                                             <div class="font-weight-bold text-primary">1.2배 / 정상</div>
-                                                                            <div class="sensor-item-unit">오일 이상 압력</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -490,12 +501,12 @@
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">케이블</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">케이블</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text">
-                                                                            <div class="font-weight-bold text-danger">56초 연속감지</div>
-                                                                            <div class="sensor-item-unit">연기 감지</div>
+                                                                            <div class="sensor-item-unit-top">연기 감지</div>
+                                                                            <div class="font-weight-bold text-danger">56초 지속 <i class="mdi mdi-alert"></i></div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -506,12 +517,12 @@
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">Floor</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">Floor</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text">
+                                                                            <div class="sensor-item-unit-top">연기 감지</div>
                                                                             <div class="font-weight-bold text-primary">정상</div>
-                                                                            <div class="sensor-item-unit">연기 감지</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -523,137 +534,151 @@
                                         </div>
                                         <!--보일러-->
                                         <div class="col-xl-4">
-                                            <div class="card-box border border-secondary">
-                                                <h4 class="header-title mb-3">보일러</h4>
+                                            <div class="card-box border border-secondary card-sensor">
+                                                <h4 class="header-title mb-2">보일러</h4>
                                                 <div class="separator"></div>
                                                 <div class="sensor-widget">
-                                                    <div class="sensor-item">
+                                                    <div class="sensor-item sensor-item-narrow">
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">미분기 감속기 윤활유 탱크</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">미분기 감속기 윤활유 탱크</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip" title="인화점 240℃ 발화점 >320℃">
+                                                                            <div class="sensor-item-unit-top">오일 온도(℃)</div>
                                                                             <div class="font-weight-bold text-primary" data-plugin="counterup">55.5</div>
-                                                                            <div class="sensor-item-unit">오일 온도(℃)</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip"
                                                                             title="안전율 : 1.1배, 1.5배(Safety detector)">
+                                                                            <div class="sensor-item-unit-top">오일 압력</div>
                                                                             <div class="font-weight-bold text-primary">1.2배 / 정상</div>
-                                                                            <div class="sensor-item-unit">오일 압력</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text">
+                                                                            <div class="sensor-item-unit-top">불꽃 감지</div>
                                                                             <div class="font-weight-bold text-primary">정상</div>
-                                                                            <div class="sensor-item-unit">불꽃 감지</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </a>
                                                     </div>
-                                                    <div class="sensor-item">
+                                                    <div class="sensor-item sensor-item-narrow">
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">미분기 유압유탱크</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">미분기 유압유탱크</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip" title="인화점 240℃ 발화점 >320℃">
+                                                                            <div class="sensor-item-unit-top">오일 온도(℃)</div>
                                                                             <div class="font-weight-bold text-primary" data-plugin="counterup">55.5</div>
-                                                                            <div class="sensor-item-unit">오일 온도(℃)</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip"
                                                                             title="안전율 : 1.1배, 1.5배(Safety detector)">
+                                                                            <div class="sensor-item-unit-top">오일 압력</div>
                                                                             <div class="font-weight-bold text-primary">1.2배 / 정상</div>
-                                                                            <div class="sensor-item-unit">오일 압력</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text">
+                                                                            <div class="sensor-item-unit-top">불꽃 감지</div>
                                                                             <div class="font-weight-bold text-primary">정상</div>
-                                                                            <div class="sensor-item-unit">불꽃 감지</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </a>
                                                     </div>
-                                                    <div class="sensor-item">
+                                                    <div class="sensor-item sensor-item-narrow">
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">미분기 윤활유탱크</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">미분기 윤활유탱크</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip" title="인화점 240℃ 발화점 >320℃">
+                                                                            <div class="sensor-item-unit-top">오일 온도(℃)</div>
                                                                             <div class="font-weight-bold text-primary" data-plugin="counterup">55.5</div>
-                                                                            <div class="sensor-item-unit">오일 온도(℃)</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip"
                                                                             title="안전율 : 1.1배, 1.5배(Safety detector)">
+                                                                            <div class="sensor-item-unit-top">오일 압력</div>
                                                                             <div class="font-weight-bold text-primary">1.2배 / 정상</div>
-                                                                            <div class="sensor-item-unit">오일 압력</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text">
+                                                                            <div class="sensor-item-unit-top">불꽃 감지</div>
                                                                             <div class="font-weight-bold text-primary">정상</div>
-                                                                            <div class="sensor-item-unit">불꽃 감지</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </a>
                                                     </div>
-                                                    <div class="sensor-item">
+                                                    <div class="sensor-item sensor-item-narrow">
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">미분기</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">미분기</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip" title="발화점 >300℃">
+                                                                            <div class="sensor-item-unit-top">미분기 이상 온도(℃)</div>
                                                                             <div class="font-weight-bold text-primary" data-plugin="counterup">55.5</div>
-                                                                            <div class="sensor-item-unit">미분기 이상 온도(℃)</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text">
+                                                                            <div class="sensor-item-unit-top">불꽃 감지</div>
                                                                             <div class="font-weight-bold text-primary">정상</div>
-                                                                            <div class="sensor-item-unit">불꽃 감지</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </a>
                                                     </div>
-                                                     <div class="sensor-item">
+                                                     <div class="sensor-item sensor-item-narrow">
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">Coal Feeder</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">Coal Feeder</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip" title="발화점 >300℃">
+                                                                            <div class="sensor-item-unit-top">미분기 이상 온도(℃)</div>
                                                                             <div class="font-weight-bold text-primary" data-plugin="counterup">55.5</div>
-                                                                            <div class="sensor-item-unit">미분기 이상 온도(℃)</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -661,195 +686,213 @@
                                                         </a>
                                                     </div>
                                                     
-                                                    <div class="sensor-item">
+                                                    <div class="sensor-item sensor-item-narrow">
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">Sil</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">Sil</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip" title="발화점 >300℃">
+                                                                            <div class="sensor-item-unit-top">사일로내 이상 온도(℃)</div>
                                                                             <div class="font-weight-bold text-primary" data-plugin="counterup">55.5</div>
-                                                                            <div class="sensor-item-unit">사일로내 이상 온도(℃)</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </a>
                                                     </div>
-                                                    <div class="sensor-item">
+                                                    <div class="sensor-item sensor-item-narrow">
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">감압정제유 공급 설비</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">감압정제유 공급 설비</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip" title="인화점 45~80℃ 발화점 >350℃">
+                                                                            <div class="sensor-item-unit-top">오일 이상 온도(℃)</div>
                                                                             <div class="font-weight-bold text-primary" data-plugin="counterup">55.5</div>
-                                                                            <div class="sensor-item-unit">오일 이상 온도(℃)</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text">
+                                                                            <div class="sensor-item-unit-top">불꽃 감지</div>
                                                                             <div class="font-weight-bold text-primary">정상</div>
-                                                                            <div class="sensor-item-unit">불꽃 감지</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </a>
                                                     </div>
-                                                    <div class="sensor-item">
+                                                    <div class="sensor-item sensor-item-narrow">
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">보일러 유압 Valve류 HPU</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">보일러 유압 Valve류 HPU</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip" title="인화점 232℃ 발화점 >316℃">
+                                                                            <div class="sensor-item-unit-top">오일 이상 온도(℃)</div>
                                                                             <div class="font-weight-bold text-primary" data-plugin="counterup">55.5</div>
-                                                                            <div class="sensor-item-unit">오일 이상 온도(℃)</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip"
                                                                             title="안전율 : 1.1배, 1.5배(Safety detector)">
+                                                                            <div class="sensor-item-unit-top">오일 압력</div>
                                                                             <div class="font-weight-bold text-primary">1.2배 / 정상</div>
-                                                                            <div class="sensor-item-unit">오일 압력</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text">
+                                                                            <div class="sensor-item-unit-top">불꽃 감지</div>
                                                                             <div class="font-weight-bold text-primary">정상</div>
-                                                                            <div class="sensor-item-unit">불꽃 감지</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </a>
                                                     </div>
-                                                    <div class="sensor-item">
+                                                    <div class="sensor-item sensor-item-narrow">
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">공기예열기 감속기 및 베어링</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">공기예열기 감속기 및 베어링</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip" title="발화점 >225℃">
+                                                                            <div class="sensor-item-unit-top">오일 이상 온도(℃)</div>
                                                                             <div class="font-weight-bold text-primary" data-plugin="counterup">55.5</div>
-                                                                            <div class="sensor-item-unit">오일 이상 온도(℃)</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text">
+                                                                            <div class="sensor-item-unit-top">불꽃 감지</div>
                                                                             <div class="font-weight-bold text-primary">정상</div>
-                                                                            <div class="sensor-item-unit">불꽃 감지</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </a>
                                                     </div>
-                                                    <div class="sensor-item">
+                                                    <div class="sensor-item sensor-item-narrow">
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">보일러 통풍계통 윤활장치</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">보일러 통풍계통 윤활장치</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip" title="발화점 >240℃">
+                                                                            <div class="sensor-item-unit-top">오일 이상 온도(℃)</div>
                                                                             <div class="font-weight-bold text-primary" data-plugin="counterup">55.5</div>
-                                                                            <div class="sensor-item-unit">오일 이상 온도(℃)</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text">
+                                                                            <div class="sensor-item-unit-top">불꽃 감지</div>
                                                                             <div class="font-weight-bold text-primary">정상</div>
-                                                                            <div class="sensor-item-unit">불꽃 감지</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </a>
                                                     </div>
-                                                    <div class="sensor-item">
+                                                    <div class="sensor-item sensor-item-narrow">
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">Floor</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">Floor</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text">
+                                                                            <div class="sensor-item-unit-top">연기 감지</div>
                                                                             <div class="font-weight-bold text-primary">정상</div>
-                                                                            <div class="sensor-item-unit">연기 감지</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </a>
                                                     </div>
-                                                    <div class="sensor-item">
+                                                    <div class="sensor-item sensor-item-narrow">
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">윤활유,유압유 공급 배관</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">윤활유,유압유 공급 배관</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip" title="인화점 232℃ 발화점 >316℃">
+                                                                            <div class="sensor-item-unit-top">오일 이상 온도(℃)</div>
                                                                             <div class="font-weight-bold text-primary" data-plugin="counterup">55.5</div>
-                                                                            <div class="sensor-item-unit">오일 이상 온도(℃)</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip"
                                                                             title="안전율 : 1.1배, 1.5배(Safety detector)">
+                                                                            <div class="sensor-item-unit-top">오일 압력</div>
                                                                             <div class="font-weight-bold text-primary">1.2배 / 정상</div>
-                                                                            <div class="sensor-item-unit">오일 압력</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text">
+                                                                            <div class="sensor-item-unit-top">불꽃 감지</div>
                                                                             <div class="font-weight-bold text-primary">정상</div>
-                                                                            <div class="sensor-item-unit">불꽃 감지</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </a>
                                                     </div>
-                                                    <div class="sensor-item">
+                                                    <div class="sensor-item sensor-item-narrow">
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">윤활유,유압유 공급 배관</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">윤활유,유압유 공급 배관</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip" title="인화점 232℃ 발화점 >316℃">
+                                                                            <div class="sensor-item-unit-top">오일 이상 온도(℃)</div>
                                                                             <div class="font-weight-bold text-primary" data-plugin="counterup">55.5</div>
-                                                                            <div class="sensor-item-unit">오일 이상 온도(℃)</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip"
                                                                             title="안전율 : 1.1배, 1.5배(Safety detector)">
+                                                                            <div class="sensor-item-unit-top">오일 압력</div>
                                                                             <div class="font-weight-bold text-primary">1.2배 / 정상</div>
-                                                                            <div class="sensor-item-unit">오일 압력</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text">
+                                                                            <div class="sensor-item-unit-top">불꽃 감지</div>
                                                                             <div class="font-weight-bold text-primary">정상</div>
-                                                                            <div class="sensor-item-unit">불꽃 감지</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -863,21 +906,21 @@
                                         <!-- 보일러 end -->
                                         <!-- 옥내저탄장 -->
                                         <div class="col-xl-4">
-                                            <div class="card-box border border-secondary">
-                                                <h4 class="header-title mb-3">옥내저탄장</h4>
+                                            <div class="card-box border border-secondary card-sensor">
+                                                <h4 class="header-title mb-2">옥내저탄장</h4>
                                                 <div class="separator"></div>
                                                 <div class="sensor-widget">
                                                     <div class="sensor-item">
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">belt Conveyor</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">belt Conveyor</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip" title="임계점 >300 ℃">
+                                                                            <div class="sensor-item-unit-top">화재발생 온도(℃)</div>
                                                                             <div class="font-weight-bold text-primary" data-plugin="counterup">55.5</div>
-                                                                            <div class="sensor-item-unit">화재발생 온도(℃)</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -888,13 +931,13 @@
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">Air Conveyor</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">Air Conveyor</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip" title="임계점 >300 ℃">
+                                                                            <div class="sensor-item-unit-top">화재발생 온도(℃)</div>
                                                                             <div class="font-weight-bold text-primary" data-plugin="counterup">55.5</div>
-                                                                            <div class="sensor-item-unit">화재발생 온도(℃)</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -905,13 +948,13 @@
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">Bucket/Chain/screw Conveyor</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">Bucket/Chain/ screw Conveyor</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip" title="임계점 >300 ℃">
+                                                                            <div class="sensor-item-unit-top">화재발생 온도(℃)</div>
                                                                             <div class="font-weight-bold text-primary" data-plugin="counterup">55.5</div>
-                                                                            <div class="sensor-item-unit">화재발생 온도(℃)</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -922,21 +965,23 @@
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">Dust Collector</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">Dust Collector</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip" title="임계점 300 ℃">
+                                                                            <div class="sensor-item-unit-top">화재발생 온도(℃)</div>
                                                                             <div class="font-weight-bold text-primary" data-plugin="counterup">55.5</div>
-                                                                            <div class="sensor-item-unit">화재발생 온도(℃)</div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip"
                                                                             title="안전율 : 1.1배, 1.5배(Safety detector)">
+                                                                            <div class="sensor-item-unit-top">이상 압력</div>
                                                                             <div class="font-weight-bold text-primary">1.2배 / 정상</div>
-                                                                            <div class="sensor-item-unit">이상 압력</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -947,13 +992,13 @@
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">Shute</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">Shute</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip" title="임계점 >300 ℃">
+                                                                            <div class="sensor-item-unit-top">화재발생 온도(℃)</div>
                                                                             <div class="font-weight-bold text-primary" data-plugin="counterup">55.5</div>
-                                                                            <div class="sensor-item-unit">화재발생 온도(℃)</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -964,13 +1009,13 @@
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">Bin</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">Bin</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip" title="임계점 >300 ℃">
+                                                                            <div class="sensor-item-unit-top">화재발생 온도(℃)</div>
                                                                             <div class="font-weight-bold text-primary" data-plugin="counterup">55.5</div>
-                                                                            <div class="sensor-item-unit">화재발생 온도(℃)</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -981,13 +1026,13 @@
                                                         <a href="#sensor-modal" data-animation="fadein"
                                                             data-plugin="custommodal" data-overlayColor="#36404a">
                                                             <div class="row">
-                                                                <label class="col-md-4">Floor</label>
-                                                                <div class="col-md-8">
+                                                                <label class="col-md-3">Floor</label>
+                                                                <div class="col-md-3">
                                                                     <div class="row sensor-item-row">
                                                                         <div class="sensor-item-text"
                                                                             data-toggle="tooltip" title="임계점 >300 ℃">
+                                                                            <div class="sensor-item-unit-top">화재발생 온도(℃)</div>
                                                                             <div class="font-weight-bold text-primary" data-plugin="counterup">55.5</div>
-                                                                            <div class="sensor-item-unit">화재발생 온도(℃)</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>

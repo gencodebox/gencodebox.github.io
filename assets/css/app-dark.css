@@ -600,6 +600,11 @@ body[data-topbar="dark"] .content-page {
       color: #a2abb4; }
     .footer .footer-links a:first-of-type {
       margin-left: 0; }
+  .footer .company-tag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: auto; }
 
 .footer-alt {
   left: 0 !important;
@@ -1281,6 +1286,26 @@ body[data-layout="horizontal"][data-layout-size="boxed"] .container-fluid {
 
 .sensor-widget .sensor-item-narrow {
   padding: 0.05rem 0 !important; }
+
+.sensor-widget .table-sensor-header {
+  color: #f1f5f7;
+  font-size: 0.6rem; }
+
+.sensor-widget .table-sensor-item-text {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  font-size: 13px !important;
+  color: #71b6f9 !important;
+  font-weight: 700 !important; }
+
+.sensor-widget .facility-item {
+  font-weight: 500;
+  color: #f7f7f7; }
+
+.sensor-widget .table-sensor-header-text {
+  font-weight: 500;
+  color: #f7f7f7; }
 
 .card-sensor {
   padding-top: 0.7rem !important; }
