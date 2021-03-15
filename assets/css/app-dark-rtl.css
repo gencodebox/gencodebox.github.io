@@ -698,7 +698,7 @@ body[data-topbar="dark"] .content-page {
 
 @media (min-width: 1200px) {
   body[data-layout="horizontal"] .container-fluid {
-    max-width: 90%; } }
+    max-width: 97%; } }
 
 body[data-layout="horizontal"] .content-page {
   margin-left: 0px;
@@ -1241,74 +1241,6 @@ body[data-layout="horizontal"][data-layout-size="boxed"] .container-fluid {
     position: absolute;
     right: 5px;
     top: 10px; }
-
-.sensor-widget .sensor-item {
-  border-bottom: 1px solid rgba(58, 66, 80, 0.5);
-  overflow: hidden;
-  padding: 0.75rem 0;
-  position: relative; }
-  .sensor-widget .sensor-item:last-child {
-    border: none; }
-  .sensor-widget .sensor-item .sensor-item-img {
-    display: block;
-    float: left;
-    margin-right: 15px;
-    width: 40px; }
-    .sensor-widget .sensor-item .sensor-item-img img {
-      width: 40px; }
-  .sensor-widget .sensor-item .sensor-item-author {
-    color: #f7f7f7;
-    display: block;
-    margin-bottom: 3px; }
-  .sensor-widget .sensor-item .sensor-item-text {
-    color: #f1f5f7;
-    display: block;
-    font-size: 0.9375rem;
-    margin: 0;
-    overflow: hidden; }
-  .sensor-widget .sensor-item .sensor-item-date {
-    color: #f1f5f7;
-    font-size: 0.6875rem;
-    position: absolute;
-    right: 5px;
-    top: 10px; }
-  .sensor-widget .sensor-item .sensor-item-row {
-    position: relative; }
-  .sensor-widget .sensor-item .sensor-item-unit {
-    color: #f1f5f7;
-    font-size: 0.6875rem;
-    position: absolute;
-    right: 15px;
-    top: 10px; }
-  .sensor-widget .sensor-item .sensor-item-unit-top {
-    color: #f1f5f7;
-    font-size: 0.6rem; }
-
-.sensor-widget .sensor-item-narrow {
-  padding: 0.05rem 0 !important; }
-
-.sensor-widget .table-sensor-header {
-  color: #f1f5f7;
-  font-size: 0.6rem; }
-
-.sensor-widget .table-sensor-item-text {
-  display: block;
-  margin: 0;
-  overflow: hidden;
-  font-size: 13px !important;
-  color: #71b6f9 !important;
-  font-weight: 700 !important; }
-
-.sensor-widget .facility-item {
-  font-weight: 500;
-  color: #f7f7f7; }
-
-.sensor-widget .table-sensor-header-text {
-  font-weight: 500;
-  color: #f7f7f7; }
-
-.card-sensor {
-  padding-top: 0.7rem !important; }
 
 .checkbox label {
   display: inline-block;
@@ -2949,18 +2881,17 @@ body.authentication-bg {
   table-layout: fixed;
   width: 100%; }
   .timeline .time-show {
-    margin-bottom: 30px;
-    margin-right: -75px;
-    margin-top: 30px;
-    position: relative;
-    text-align: right; }
+    margin-bottom: 5px;
+    margin-left: -10px;
+    margin-top: 5px;
+    position: relative; }
     .timeline .time-show a {
       color: #fff; }
   .timeline:before {
     background-color: rgba(152, 166, 173, 0.3);
     bottom: 0px;
     content: "";
-    left: 50%;
+    left: 5px;
     position: absolute;
     top: 30px;
     width: 2px;
@@ -2974,6 +2905,7 @@ body.authentication-bg {
     height: 21px;
     left: -54px;
     margin-top: -11px;
+    margin-left: 20px;
     position: absolute;
     text-align: center;
     top: 50%;
@@ -2992,7 +2924,7 @@ h3.timeline-title {
   text-transform: uppercase; }
 
 .timeline-item {
-  display: table-row; }
+  display: contents; }
   .timeline-item:before {
     content: "";
     display: block;
@@ -3045,7 +2977,8 @@ h3.timeline-title {
   margin-left: 0;
   margin-right: 45px; }
   .timeline-item.alt .panel .panel-body p + p {
-    margin-top: 10px !important; }
+    margin-top: 10px !important;
+    font-size: 12px; }
 
 .timeline-item.alt h4 {
   text-align: right; }
@@ -3057,7 +2990,7 @@ h3.timeline-title {
   text-align: right; }
 
 .timeline-desk {
-  display: table-cell;
+  display: table-row;
   vertical-align: top;
   width: 50%; }
   .timeline-desk h4 {
@@ -3068,10 +3001,10 @@ h3.timeline-title {
     background: #313844;
     display: block;
     margin-bottom: 5px;
-    margin-left: 45px;
+    margin-left: 30px;
     position: relative;
     text-align: left;
-    padding: 20px;
+    padding: 10px;
     border-radius: 7px; }
   .timeline-desk h5 span {
     color: #313844;
@@ -3080,7 +3013,7 @@ h3.timeline-title {
     margin-bottom: 4px; }
   .timeline-desk p {
     color: #adb5bd;
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 0; }
   .timeline-desk .album {
     margin-top: 12px; }
