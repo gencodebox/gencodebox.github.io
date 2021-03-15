@@ -1852,6 +1852,12 @@ body[data-layout="horizontal"][data-layout-size="boxed"] .container-fluid {
   height: 1px;
   background: rgba(173, 181, 189, 0.5); }
 
+.realTimeDangerLine {
+  border-color: #ff5b5b;
+  top: -30px;
+  border-width: 10px;
+  position: relative; }
+
 .sensor-modal-title {
   padding: 20px 25px 5px 25px;
   line-height: 12px;
@@ -1961,6 +1967,9 @@ body[data-layout="horizontal"][data-layout-size="boxed"] .container-fluid {
 
 .sensor-widget .sensor-item-narrow tr td, .sensor-widget .sensor-item-narrow th {
   padding: 0.25rem 0 !important; }
+
+.sensor-widget label {
+  font-size: 12px; }
 
 .sensor-widget .warning-row {
   border-width: 10px !important;

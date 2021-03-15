@@ -8,6 +8,9 @@
     <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
     <meta content="Coderthemes" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 
@@ -173,10 +176,10 @@
                                     <li>
                                         <ul>
                                             <li>
-                                                <a href="dashboard2.html">주요설비현황</a>
+                                                <a href="dashboard-main.html">주요설비현황</a>
                                             </li>
                                             <li>
-                                                <a href="dashboard-iot.html">IoT감지기현황</a>
+                                                <a href="dashboard-main2.html">주요설비현황</a>
                                             </li>
                                             <li>
                                                 <a href="dashboard-iot2.html">IoT감지기현황</a>
@@ -1388,158 +1391,139 @@
                                         <!-- 옥내저탄장 end -->
                                         <div class="col-xl-3">
                                             <div class="card-box border border-warning ">
-                                                <div class="dropdown float-right">
-                                                    <a href="#" class="dropdown-toggle arrow-none card-drop" data-toggle="dropdown" aria-expanded="false">
-                                                        <i class="mdi mdi-dots-vertical"></i>
-                                                    </a>
-                                                    <div class="dropdown-menu dropdown-menu-right">
-                                                        <!-- item-->
-                                                        <a href="javascript:void(0);" class="dropdown-item">Action</a>
-                                                        <!-- item-->
-                                                        <a href="javascript:void(0);" class="dropdown-item">Another action</a>
-                                                        <!-- item-->
-                                                        <a href="javascript:void(0);" class="dropdown-item">Something else</a>
-                                                        <!-- item-->
-                                                        <a href="javascript:void(0);" class="dropdown-item">Separated link</a>
-                                                    </div>
-                                                </div>
-                
-                                                <h4 class="header-title mt-0 mb-3">1호기 이벤트발생 내역guig</h4>
-                
-                                                <!-- <div id="flotRealTime" style="height: 320px;" class="flot-chart"></div>
-                 -->
-                 <div class="col-sm-12 col-xl-12 ">
-                    <div class="timeline" dir="ltr">
-                        <article class="timeline-item">
-                            <div class="time-show first">
-                                <a href="#" class="btn btn-primary width-lg"> 금일</a>
-                            </div>
-                        </article>
-                        <article class="timeline-item">
-                            <div class="timeline-desk">
-                                <div class="panel">
-                                    <div class="panel-body">
-                                        <span class="arrow-alt"></span>
-                                        <span class="timeline-icon bg-danger"><i class="mdi mdi-circle"></i></span>
-                                        <p class="timeline-date text-muted"><small>08:24:23.12</small></p>
-                                        <p class="text-danger">미분기 열 임계점 70% 접근</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="timeline-item ">
-                            <div class="timeline-desk">
-                                <div class="panel">
-                                    <div class="panel-body">
-                                        <span class="arrow"></span>
-                                        <span class="timeline-icon bg-success"><i class="mdi mdi-circle"></i></span>
-                                        <p class="timeline-date text-muted"><small>08:25:23.12</small></p>
-                                        <p class="text-success">미분기 열 임계점 60% 복귀</p>
+                                              <h4 class="header-title mt-0 mb-3">9호기 이벤트발생 내역</h4>
+                                              <div class="col-sm-12 col-xl-12 ">
+                                                  <div class="timeline" dir="ltr">
+                                                      <article class="timeline-item">
+                                                          <div class="time-show first">
+                                                              <a href="#" class="btn btn-primary width-lg"> 금일</a>
+                                                          </div>
+                                                      </article>
+                                                      <article class="timeline-item">
+                                                          <div class="timeline-desk">
+                                                              <div class="panel">
+                                                                  <div class="panel-body">
+                                                                      <span class="arrow-alt"></span>
+                                                                      <span class="timeline-icon bg-danger"><i class="mdi mdi-circle"></i></span>
+                                                                      <p class="timeline-date text-muted"><small>08:24:23.12</small></p>
+                                                                      <p class="text-danger">미분기 열 임계점 70% 접근</p>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </article>
+                                                      <article class="timeline-item ">
+                                                          <div class="timeline-desk">
+                                                              <div class="panel">
+                                                                  <div class="panel-body">
+                                                                      <span class="arrow"></span>
+                                                                      <span class="timeline-icon bg-success"><i class="mdi mdi-circle"></i></span>
+                                                                      <p class="timeline-date text-muted"><small>08:25:23.12</small></p>
+                                                                      <p class="text-success">미분기 열 임계점 60% 복귀</p>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="timeline-item">
-                            <div class="timeline-desk">
-                                <div class="panel">
-                                    <div class="panel-body">
-                                        <span class="arrow-alt"></span>
-                                        <span class="timeline-icon bg-primary"><i class="mdi mdi-circle"></i></span>
-                                        <p class="timeline-date text-muted"><small>08:25:23.12</small></p>
-                                        <p class="text-primary">미분기 윤활유 탱크 연기 10초간 발생 : <a href="#">3번 IoT센서</a></p>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </article>
+                                                      <article class="timeline-item">
+                                                          <div class="timeline-desk">
+                                                              <div class="panel">
+                                                                  <div class="panel-body">
+                                                                      <span class="arrow-alt"></span>
+                                                                      <span class="timeline-icon bg-primary"><i class="mdi mdi-circle"></i></span>
+                                                                      <p class="timeline-date text-muted"><small>08:25:23.12</small></p>
+                                                                      <p class="text-primary">미분기 윤활유 탱크 연기 10초간 발생 : <a href="#">3번 IoT센서</a></p>
+                                                                      <div class="clearfix"></div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </article>
 
-                        <article class="timeline-item">
-                            <div class="time-show">
-                                <a href="#" class="btn btn-primary width-lg">2021-03-11</a>
-                            </div>
-                        </article>
-                        <article class="timeline-item">
-                            <div class="timeline-desk">
-                                <div class="panel">
-                                    <div class="panel-body">
-                                        <span class="arrow"></span>
-                                        <span class="timeline-icon bg-warning"><i class="mdi mdi-circle"></i></span>
-                                        <p class="timeline-date text-muted"><small>08:25:23.12</small></p>
-                                        <p class="text-warning"> 터빈베어링 불꽃 3초발생 : <span><a href="#"> 2번 IoT센서 </a></span>
-                                        </p>
+                                                      <article class="timeline-item">
+                                                          <div class="time-show">
+                                                              <a href="#" class="btn btn-primary width-lg">2021-03-11</a>
+                                                          </div>
+                                                      </article>
+                                                      <article class="timeline-item">
+                                                          <div class="timeline-desk">
+                                                              <div class="panel">
+                                                                  <div class="panel-body">
+                                                                      <span class="arrow"></span>
+                                                                      <span class="timeline-icon bg-warning"><i class="mdi mdi-circle"></i></span>
+                                                                      <p class="timeline-date text-muted"><small>08:25:23.12</small></p>
+                                                                      <p class="text-warning"> 터빈베어링 불꽃 3초발생 : <span><a href="#"> 2번 IoT센서 </a></span>
+                                                                      </p>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="timeline-item">
-                            <div class="timeline-desk">
-                                <div class="panel">
-                                    <div class="panel-body">
-                                        <span class="arrow-alt"></span>
-                                        <span class="timeline-icon bg-primary"><i class="mdi mdi-circle"></i></span>
-                                        <p class="timeline-date text-muted"><small>08:25:23.12</small></p>
-                                        <p class="text-primary"> 터빈베어링 불꽃 소멸 : <span><a href="#"> 2번 IoT센서 </a></span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </article>
+                                                      <article class="timeline-item">
+                                                          <div class="timeline-desk">
+                                                              <div class="panel">
+                                                                  <div class="panel-body">
+                                                                      <span class="arrow-alt"></span>
+                                                                      <span class="timeline-icon bg-primary"><i class="mdi mdi-circle"></i></span>
+                                                                      <p class="timeline-date text-muted"><small>08:25:23.12</small></p>
+                                                                      <p class="text-primary"> 터빈베어링 불꽃 소멸 : <span><a href="#"> 2번 IoT센서 </a></span>
+                                                                      </p>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </article>
 
-                        <article class="timeline-item">
-                            <div class="timeline-desk">
-                                <div class="panel">
-                                    <div class="panel-body">
-                                        <span class="arrow"></span>
-                                        <span class="timeline-icon bg-success"><i class="mdi mdi-circle"></i></span>
-                                        <p class="timeline-date text-muted"><small>08:25:23.12</small></p>
-                                        <p class="text-warning"> 터빈베어링 불꽃 3초발생 : <span><a href="#"> 2번 IoT센서 </a></span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="timeline-item">
-                            <div class="time-show">
-                                <a href="#" class="btn btn-primary width-lg">2021-03-10</a>
-                            </div>
-                        </article>
+                                                      <article class="timeline-item">
+                                                          <div class="timeline-desk">
+                                                              <div class="panel">
+                                                                  <div class="panel-body">
+                                                                      <span class="arrow"></span>
+                                                                      <span class="timeline-icon bg-success"><i class="mdi mdi-circle"></i></span>
+                                                                      <p class="timeline-date text-muted"><small>08:25:23.12</small></p>
+                                                                      <p class="text-success"> 터빈베어링 불꽃 3초발생 : <span><a href="#"> 2번 IoT센서 </a></span>
+                                                                      </p>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </article>
+                                                      <article class="timeline-item">
+                                                          <div class="time-show">
+                                                              <a href="#" class="btn btn-primary width-lg">2021-03-10</a>
+                                                          </div>
+                                                      </article>
 
-                        <article class="timeline-item">
-                            <div class="timeline-desk">
-                                <div class="panel">
-                                    <div class="panel-body">
-                                        <span class="arrow-alt"></span>
-                                        <span class="timeline-icon"><i class="mdi mdi-circle"></i></span>
-                                        <p class="timeline-date text-muted"><small>08:25:23.12</small></p>
-                                        <p class="text-warning"> 터빈베어링 불꽃 3초발생 : <span><a href="#"> 2번 IoT센서 </a></span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
+                                                      <article class="timeline-item">
+                                                          <div class="timeline-desk">
+                                                              <div class="panel">
+                                                                  <div class="panel-body">
+                                                                      <span class="arrow-alt"></span>
+                                                                      <span class="timeline-icon"><i class="mdi mdi-circle"></i></span>
+                                                                      <p class="timeline-date text-muted"><small>08:25:23.12</small></p>
+                                                                      <p class="text-muted"> 터빈베어링 불꽃 3초발생 : <span><a href="#"> 2번 IoT센서 </a></span>
+                                                                      </p>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </article>
 
-                        <article class="timeline-item">
-                            <div class="timeline-desk">
-                                <div class="panel">
-                                    <div class="panel-body">
-                                        <span class="arrow"></span>
-                                        <span class="timeline-icon bg-danger"><i class="mdi mdi-circle">    </i></span>
-                                        <p class="timeline-date text-muted"><small>08:25:23.12</small></p>
-                                        <p class="text-warning"> 터빈베어링 불꽃 3초발생 : <span><a href="#"> 2번 IoT센서 </a></span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
+                                                      <article class="timeline-item">
+                                                          <div class="timeline-desk">
+                                                              <div class="panel">
+                                                                  <div class="panel-body">
+                                                                      <span class="arrow"></span>
+                                                                      <span class="timeline-icon bg-danger"><i class="mdi mdi-circle">    </i></span>
+                                                                      <p class="timeline-date text-muted"><small>08:25:23.12</small></p>
+                                                                      <p class="text-danger"> 터빈베어링 불꽃 3초발생 : <span><a href="#"> 2번 IoT센서 </a></span>
+                                                                      </p>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </article>
 
-                    </div>
-                </div>
+                                                  </div>
+                                              </div>
 
                                             </div>
                                         </div><!-- end col-->
-                
+
                                     </div>
 
 
